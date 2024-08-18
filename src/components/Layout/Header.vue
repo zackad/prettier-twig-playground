@@ -3,7 +3,7 @@
     <span class="header__logo-wrapper">
       <img class="header__logo" src="/icon.png" alt="The Prettier logo" />
       <h1 class="header__headline">
-        Prettier PHP
+        Prettier Twig
         <span class="header__version" v-if="version">
           <span class="header__version--local" v-if="version === 'custom'">
             from local file
@@ -12,8 +12,8 @@
             v-else
             :href="
               version
-                ? `https://github.com/prettier/plugin-php/tree/v${version}`
-                : 'https://github.com/prettier/plugin-php/tree/master'
+                ? `https://github.com/zackad/prettier-plugin-twig/tree/v${version}`
+                : 'https://github.com/zackad/prettier-plugin-twig/tree/master'
             "
             target="_blank"
             rel="noopener"
@@ -96,7 +96,7 @@
     <aside class="header__repo-buttons">
       <GitHubButton
         type="link"
-        href="https://github.com/Loilo/prettier-php-playground"
+        href="https://github.com/zackad/prettier-twig-playground"
         target="_blank"
         class="header__own-repo-button"
       >
@@ -115,8 +115,8 @@
         </svg>
         Playground
       </GitHubButton>
-      <RepositoryButton repo="prettier/plugin-php" show-stars>
-        Prettier PHP Plugin
+      <RepositoryButton repo="zackad/prettier-plugin-twig" show-stars>
+        Prettier Twig Plugin
       </RepositoryButton>
     </aside>
   </header>

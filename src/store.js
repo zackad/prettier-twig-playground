@@ -163,7 +163,7 @@ export const getters = {
     state.version === 'custom'
       ? '**Plugin version: local plugin file**'
       : state.version
-      ? `**@prettier/plugin-php v${state.version}**
+      ? `**@zackad/prettier-plugin-twig v${state.version}**
 [Playground link](${state.url})`
       : '**Plugin version: unknown**'
   }
@@ -179,7 +179,7 @@ ${getters.output}
 \`\`\`
 `,
   issueLink: (_, getters) =>
-    `https://github.com/prettier/plugin-php/issues/new?body=${encodeURIComponent(
+    `https://github.com/zackad/prettier-plugin-twig/issues/new?body=${encodeURIComponent(
       getters.issueMarkdown
     )}`,
 

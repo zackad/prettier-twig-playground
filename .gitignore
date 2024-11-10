@@ -183,4 +183,5 @@ static/sw.js
 # devenv
 .devenv
 .direnv
+.idea
 .pre-commit-config.yaml

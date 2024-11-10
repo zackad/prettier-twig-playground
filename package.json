@@ -12,6 +12,7 @@
   "type": "module",
   "dependencies": {
     "@prettier/plugin-php": "^0.22.2",
+    "@zackad/prettier-plugin-twig": "^0.9.1",
     "codemirror-editor-vue3": "^2.6.0",
     "comlink": "^4.4.1",
     "composite-symbol": "^1.0.2",

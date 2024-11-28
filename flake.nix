@@ -33,7 +33,10 @@
             modules = [
               {
                 # https://devenv.sh/reference/options/
-                packages = [ pkgs.nodejs ];
+                packages = [
+                  pkgs.nodejs
+                  pkgs.yarn
+                ];
 
                 pre-commit.hooks = {
                   nixfmt = {

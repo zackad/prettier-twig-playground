@@ -16,14 +16,15 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'yarn'
       - name: Install dependencies
-        run: npm ci
+        run: yarn install
       - name: Install Playwright
-        run: npx playwright install chromium --with-deps
+        run: node_modules/.bin/playwright install chromium --with-deps
       - name: Build Playground
-        run: npm run build
+        run: yarn run build
       - name: Run tests
-        run: npm test
+        run: yarn run test
       - uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist
